@@ -17,23 +17,23 @@ function playSound(sound)
 {
     switch (sound) {
         case "red":
-            var audio = new Audio("sounds/red.mp3");
+            var audio = new Audio("red.mp3");
             audio.play();
             break;
         case "blue":
-            var audio = new Audio("sounds/blue.mp3");
+            var audio = new Audio("blue.mp3");
             audio.play();
             break;
         case "yellow":
-                var audio = new Audio("sounds/yellow.mp3");
+                var audio = new Audio("yellow.mp3");
                 audio.play();
             break;
         case "green":
-                    var audio = new Audio("sounds/green.mp3");
+                    var audio = new Audio("green.mp3");
                     audio.play();
             break;
         default:
-                var audio = new Audio("sounds/wrong.mp3");
+                var audio = new Audio("wrong.mp3");
                 audio.play();
             break;
     }
@@ -56,7 +56,7 @@ function checkAnswer(currentlevel){
     }
     else
     {
-        var audio =new Audio("sounds/wrong.mp3");
+        var audio =new Audio("wrong.mp3");
         audio.play();
         $("body").addClass("game-over");
         setTimeout(function(){
